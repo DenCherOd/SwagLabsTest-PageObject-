@@ -12,6 +12,8 @@ public class CartPage extends CommonPage {
 
     private final By checkoutButton = By.xpath("//button[@id='checkout']");
     private String removeItemFromCartButton = "//*[text()='#productName#']//ancestor::*//*[text()='Remove']";
+    private String productNameInTheCart = "//div[text()='#productName#']";
+
 
     public void makeCheckout() {
         waitForVisible(checkoutButton);
@@ -20,10 +22,12 @@ public class CartPage extends CommonPage {
 
     public void deleteItemFromTheCart(String productName) {
         removeItemFromCartButton = removeItemFromCartButton.replace("#productName#", productName);
+        waitForVisible(By.xpath(removeItemFromCartButton));
         driver.findElement((By.xpath(removeItemFromCartButton))).click();
     }
 
     public void checkProductIsDeleted(String productName) {
-        Assert.assertTrue(driver.findElement(By.xpath(productName)).isDisplayed(), "Product was not deleted");
+        productNameInTheCart = productNameInTheCart.replace("#productName#", productName);
+        Assert.assertFalse(waitForLocated(By.xpath(productNameInTheCart)), "Element is present");
     }
 }

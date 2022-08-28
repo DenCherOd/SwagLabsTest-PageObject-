@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.SwagLabsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-28T18:08:35" hostname="DESKTOP-IC15KUK" time="75.926">
+<testsuite name="tests.SwagLabsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-28T19:13:01" hostname="DESKTOP-IC15KUK" time="0.793">
   <properties/>
-  <testcase name="correctSortingByPriceAndName" classname="tests.SwagLabsTest" time="75.926"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 63713
+  <testcase name="successfulPurchase" classname="tests.SwagLabsTest" time="0.793"/>
+  <system-out><![CDATA[Wait for visible By.xpath: //*[text()='Sauce Labs Backpack']//ancestor::*[@class='inventory_item_description']//*[text()='Add to cart']
+Wait for visible By.xpath: //button[@id='checkout']
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 61867
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-авг. 28, 2022 9:08:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+авг. 28, 2022 10:13:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-авг. 28, 2022 9:08:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+авг. 28, 2022 10:13:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 104, so returning the closest version found: 103
-авг. 28, 2022 9:08:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+авг. 28, 2022 10:13:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 104 of 103
 ]]></system-err>
 </testsuite>

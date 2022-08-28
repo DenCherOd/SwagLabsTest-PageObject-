@@ -19,7 +19,7 @@ public class CommonPage {
         System.out.println("Wait for visible " + locator);
         boolean isVisible = true;
         try {
-            new WebDriverWait(driver, Duration.ofSeconds(10))
+            new WebDriverWait(driver, Duration.ofSeconds(3))
                     .until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
         } catch (TimeoutException e) {
             System.out.println("Can not find " + locator);
@@ -32,7 +32,7 @@ public class CommonPage {
         System.out.println("Wait for located: " + locator);
         boolean isLocated = true;
         try {
-            new WebDriverWait(driver, Duration.ofSeconds(10))
+            new WebDriverWait(driver, Duration.ofSeconds(3))
                     .until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
         } catch (TimeoutException e) {
             System.out.println("Can not find " + locator);

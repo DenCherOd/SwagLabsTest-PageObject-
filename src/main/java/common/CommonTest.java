@@ -19,8 +19,8 @@ public class CommonTest {
         driver.manage().window().maximize();
     }
 
-//    @AfterMethod
-//    public void killBrowser() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void killBrowser() {
+        driver.quit();
+    }
 }
